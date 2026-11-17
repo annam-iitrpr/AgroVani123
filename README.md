@@ -1,183 +1,188 @@
-# 🌾 AgroVani — Smart Agricultural Ecosystem & Sustainable Residue Management
-🔗 **Live Production Deployment:** [https://agro-vani.vercel.app](https://agro-vani.vercel.app)
+# 🌾 AgroVani
 
-> **Bridging the gap between farmers, machinery sellers, and sustainable agriculture through data-driven advisory, localized insights, and circular residue management.**
+<div align="center">
+
+  <img src="https://img.shields.io/badge/AI%20for%20Agriculture-Enabled-22c55e?style=for-the-badge&logo=vercel&logoColor=white" alt="AI for Agriculture" />
+  <img src="https://img.shields.io/badge/Sustainability-Residue%20Reduction-16a34a?style=for-the-badge" alt="Sustainability" />
+
+  <h3>Smart farming. Sustainable decisions. Better livelihoods.</h3>
+
+  <p>
+    AgroVani is an AI-powered agricultural ecosystem that helps farmers make better crop, market, and residue-related decisions while connecting them with trusted machinery and service providers.
+  </p>
+
+</div>
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)](https://nextjs.org/)
-[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL%20%26%20Auth-green?style=flat&logo=supabase)](https://supabase.com/)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
-[![Shadcn UI](https://img.shields.io/badge/UI-Radix%20%2F%20Shadcn-black?style=flat)](https://ui.shadcn.com/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python)](https://python.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL%20%26%20Auth-3ECF8E?style=flat&logo=supabase)](https://supabase.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
----
-
-## 📌 Problem Statement
-
-1. **Crop Residue Burning & Environmental Degradation:** In agricultural hubs across South Asia (particularly Northern India), burning crop stubble (paddy residue) generates severe atmospheric pollution, air quality degradation, and loss of essential soil nutrients.
-2. **Asymmetric Access to Heavy Farm Machinery:** Small and marginal farmers often lack affordable access to modern machinery (e.g., Happy Seeders, Super Seeders, Balers) necessary for in-situ residue management.
-3. **Information & Language Barriers:** Actionable agro-meteorological advisories and crop-selection insights rarely reach farmers in their native tongue or with geospatial context.
-4. **Disjointed Supply Chain:** Agricultural equipment suppliers, rental agents, and farmers lack a unified marketplace for bookings, verifications, and logistical coordination.
+> 🚀 Live app: https://agro-vani.vercel.app
 
 ---
 
-## 💡 Solution: AgroVani
+## ✨ At a glance
 
-**AgroVani** is an all-in-one digital agri-tech platform engineered to empower farming communities. It unifies:
-- **Intelligent Crop & Residue Advisory Engines:** Algorithmic matching for crop decisions and circular residue monetization/management strategies.
-- **Machinery Rental Hub:** Direct farmer-to-seller marketplace for booking seeders, harvesters, and balers.
-- **Geospatial & Climate Intelligence:** Live Leaflet-based farm boundaries, soil metrics, and localized weather APIs.
-- **Vernacular-First Interface:** Complete multi-language support (English, हिन्दी, ਪੰਜਾਬੀ) to eliminate accessibility bottlenecks.
+| Focus area | Value delivered |
+| --- | --- |
+| 🌱 Farmer support | Better crop, yield, and residue decisions |
+| 🤖 AI intelligence | Recommendations, advisory, and scoring models |
+| 🚜 Equipment access | Machinery booking and marketplace discovery |
+| 📍 Localized insights | Maps, mandi data, and regional context |
+| ♻️ Sustainability | Lower stubble burning and smarter residue reuse |
 
----
-
-## 🚀 Key Features
-
-### 🚜 1. Farmer Portal
-- **Guided Onboarding:** Tailored setup capturing land area, soil characteristics, primary crops, and farm location.
-- **Real-Time Dashboard:** Overview of local weather trends, field health, upcoming tasks, and rental bookings.
-- **Interactive Farm Mapping:** Integrated dynamic Leaflet mapping to pinpoint farm boundaries, track fields, and view nearby machinery providers.
-- **Machinery Booking Engine:** Instant discovery and reservation of verified farm implements (tractors, balers, seeders) with transparent pricing.
-
-### 🧠 2. Algorithmic Recommendations
-- **Crop Recommendation Engine (`lib/calculations/cropRecommendation.js`):** Suggests optimal crop rotations, expected yields, and sowing schedules based on soil profile, season, and regional data.
-- **Residue Management Engine (`lib/calculations/residueRecommendation.js`):** Analyzes crop stubble volume to suggest sustainable disposal or monetization alternatives (in-situ mulching, baling for bio-pellets, compost conversion) to eliminate burning.
-
-### 🏪 3. Seller & Service Provider Hub
-- **Inventory & Asset Management:** Register machinery fleets, configure operational availability, and manage hourly/daily rental rates.
-- **Booking & Order Fulfillment:** Live tracking of incoming farmer requests, booking status transitions, and dispatch coordination.
-
-### 🛡️ 4. Administration & Verification Console
-- **Platform Analytics:** Real-time visibility into active machinery rentals, farmer enrollment, regional distribution, and residue mitigation metrics.
-- **User & Seller Validation:** Moderation pipeline ensuring legitimate listings and verified agri-equipment vendors.
-
-### 🌐 5. Multilingual Localization (i18n)
-- Seamless real-time context switching across **English**, **Hindi (हिन्दी)**, and **Punjabi (ਪੰਜਾਬੀ)** across all dashboards and modals via custom `LanguageContext`.
+AgroVani connects farmers, machinery sellers, and agri-service providers through a single digital ecosystem designed to reduce crop residue burning, improve decision quality, and drive more sustainable agricultural outcomes.
 
 ---
 
-## 🏗️ System Architecture
+## 🧭 Why AgroVani?
+
+Agriculture in many regions still faces a combination of four major problems:
+
+- Stubble burning and air pollution caused by crop residue disposal challenges
+- Limited access to affordable farm equipment and rental services
+- Lack of trusted, localized agronomic advice in usable formats
+- Fragmented supply chains between farmers, sellers, and logistics partners
+
+AgroVani addresses these challenges with an AI-enabled platform that brings together:
+
+- Crop and residue recommendations
+- Farm and machinery marketplace workflows
+- AI-generated advisory experiences
+- Geo-aware, data-backed recommendations
+- Multilingual farmer accessibility
+
+---
+
+## 🚀 What this project includes
+
+### Farmer-facing experience
+- Guided onboarding for farm profile, crops, and land details
+- Advisory dashboards for yield, mandi prices, and MSP comparisons
+- Recommendations for crop choices and residue management
+- Machinery discovery and booking workflows
+- Maps and localized data views for field-level context
+
+### AI and decision systems
+- Gemini-powered voice advisory and response layer
+- Crop and residue recommendation engines
+- Matching and ranking logic for logistics / buyer-farmer alignment
+- ML-based scoring for agricultural suitability and assignment quality
+
+### Business and operations layer
+- Machinery seller dashboard
+- Booking and inventory workflows
+- Admin verification and moderation views
+- Market intelligence and sustainability metrics
+
+---
+
+## 🧠 AI-first architecture
 
 ```text
-┌──────────────────────────────────────────────────────────┐
-│                   Next.js 14 App Router                  │
-│  ┌───────────────────┐  ┌─────────────────────────────┐  │
-│  │   Farmer Portal   │  │   Seller & Admin Portals    │  │
-│  │  - Onboarding     │  │  - Machinery Catalog        │  │
-│  │  - Interactive Map│  │  - Booking Dispatch Engine  │  │
-│  │  - Crop/Residue UI│  │  - Verification Dashboard   │  │
-│  └─────────┬─────────┘  └──────────────┬──────────────┘  │
-│            └──────────────┬────────────┘                 │
-│                           ▼                              │
-│       Shared UI System (Radix UI / Shadcn / Tailwind)    │
-│       Vernacular Layer (i18n: EN / HI / PA)             │
-└───────────────────────────┬──────────────────────────────┘
-                            │
-              ┌─────────────┴─────────────┐
-              ▼                           ▼
-┌───────────────────────────┐ ┌───────────────────────────┐
-│     Calculation Engines   │ │     External Adapters     │
-│ - cropRecommendation.js   │ │ - Weather API Adapter     │
-│ - residueRecommendation.js│ │ - CEHub / Ag-Data Adapters│
-└─────────────┬─────────────┘ └─────────────┬─────────────┘
-              │                             │
-              └─────────────┬───────────────┘
-                            ▼
-           ┌─────────────────────────────────┐
-           │     Supabase / PostgreSQL       │
-           │  - Auth (Farmer / Seller / Admin│
-           │  - Database Tables & RLS Policies│
-           │  - Storage & Geo Queries        │
-           └─────────────────────────────────┘
+User / Farmer / Seller
+        |
+        v
+   Next.js Application
+        |
+        +--> UI + multilingual UX
+        +--> Dashboard + advisory flows
+        +--> Maps + booking experience
+        |
+        v
+  AI & Decision Services
+        |
+        +--> Gemini voice advisory + speech generation
+        +--> Crop recommendation engine
+        +--> Residue management engine
+        +--> Matching / optimization model
+        |
+        v
+  Data & Infra Layer
+        |
+        +--> Supabase / PostgreSQL
+        +--> Weather and agronomic adapters
+        +--> Python ML / scoring APIs
+        +--> Storage, auth, and deployment services
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech stack
 
-| Layer | Technology |
-| :--- | :--- |
-| **Framework** | [Next.js 14](https://nextjs.org/) (App Router, React Server Components) |
-| **Styling & Components** | [Tailwind CSS](https://tailwindcss.com/), [Shadcn UI](https://ui.shadcn.com/) (Radix Primitives), Lucide Icons |
-| **Database & Auth** | [Supabase](https://supabase.com/) (PostgreSQL with Row Level Security) |
-| **Maps & Geospatial** | [Leaflet](https://leafletjs.com/) / React-Leaflet |
-| **Internationalization** | Custom Context-driven i18n (`lib/i18n`) supporting EN, HI, PA |
-| **Weather & External Data** | Dedicated server API adapters (`lib/server/adapters/weather.js`, `cehub.js`) |
-| **Testing & Quality** | Pytest-backed test runs & test ID instrumentation (`lib/constants/testIds`) |
-| **Deployment** | [Vercel](https://vercel.com/) |
-
-### Gemini voice advisory
-
-The farmer dashboard voice advisory records a question in the browser, sends it to the server-side Gemini assistant, and plays Gemini-generated speech beside an animated AgroSaathi character. Set `GEMINI_API_KEY` on the server; optionally set `GEMINI_TTS_MODEL` and `GEMINI_TTS_VOICE` to select the speech model and voice. The text response remains visible if speech generation is unavailable.
-
-LiveKit room-token support remains available for clients that use the separate voice-agent worker, but it is not required for the dashboard's animated advisory.
+| Area | Stack |
+| --- | --- |
+| Frontend | Next.js 14, React, Tailwind CSS, Shadcn UI |
+| Backend | Next.js app routes, Python APIs, FastAPI-style server integration |
+| Database & auth | Supabase, PostgreSQL |
+| Mapping | Leaflet / React-Leaflet |
+| AI / ML | Gemini, LightGBM, Python model pipelines |
+| Testing | Pytest, project-level test orchestration |
+| Deployment | Vercel, Render, Docker |
 
 ---
 
-## 📂 Project Structure
+## 📁 Repository structure
 
 ```bash
 AgroVani/
-├── web/
-│   ├── app/                   # Next.js routes and API compatibility layer
-│   ├── admin/dashboard/       # Admin analytics & monitoring
-│   ├── api/[[...path]]/       # Unified API routing layer
-│   ├── farmer/
-│   │   ├── dashboard/         # Farmer core dashboard
-│   │   ├── advisory/           # Yield, mandi, MSP and report dashboard
-│   │   └── onboarding/        # Guided profile & field setup
-│   ├── seller/dashboard/      # Machinery inventory & bookings
-│   ├── login/                 # Role-based authentication
-│   ├── layout.js              # Root layout & providers
-│   └── page.js                # Landing page
-│   ├── src/components/        # Reusable frontend components and UI primitives
-│   ├── farmer/                # FarmMapCard, BookMachineryCard, LeafletMap
-│   ├── ui/                    # Shadcn/Radix atomic components
-│   └── LanguageSwitcher.js    # Multi-language selector
-├── backend/
-│   ├── src/                   # API services, adapters, database, and AI
-│   ├── data/                  # Backend-owned schemas and reference data
-│   └── supabase/              # Database schema ownership
-├── contracts/src/             # Shared request/response validation
-├── science/src/               # Pure agricultural calculations
-├── services/                  # Location, yield-model, and voice-agent runtimes
-├── shared/                    # Cross-runtime utilities
-├── infra/                     # Infrastructure assets
-├── scripts/                   # Operational scripts
-├── workstreams/               # Project workstream material
-├── vercel.json                # Vercel deployment configuration
-└── package.json               # Workspace commands and dependencies
+├── api/                     # Python API layer for matching and scoring
+├── apps/                   # App workspaces / runtime packages
+├── backend/                # Core backend services and adapters
+├── contracts/              # Shared contract definitions
+├── data/                   # Synthetic / reference data and generated artifacts
+├── docs/                   # Documentation and guides
+├── engine/                 # Core operational logic and orchestration
+├── infra/                  # Infrastructure and deployment setup
+├── ml/                     # ML training and model artifacts
+├── packages/               # Shared libraries and workspace packages
+├── science/                # Agricultural calculation and scoring logic
+├── services/               # Service runtimes and specialized modules
+├── shared/                 # Cross-runtime utilities
+├── scripts/                # Automation and operational scripts
+├── tests/                  # Automated tests
+├── web/                    # Frontend application
+├── .env.example            # Example environment file
+├── docker-compose.yml      # Docker orchestration
+├── package.json            # Root workspace scripts
+├── requirements.txt        # Python dependencies
+├── render.yaml             # Render deployment config
+├── README.md               # Project overview and onboarding
+└── LICENSE                 # Project license
 ```
 
 ---
 
-## 🏆 Hackathon Impact & Value Proposition
+## ⭐ Key capabilities
 
-- **Environmental Sustainability (UN SDG 13 & 15):** Direct impact on reducing stubble burning, air quality hazards, and carbon footprint through intelligent residue recycling and rental mechanization.
-- **Economic Inclusivity (UN SDG 1 & 8):** Eliminates capital expenditure barriers for small farmers by enabling an on-demand machinery rental economy.
-- **Hyper-Local Accessibility (UN SDG 10):** Built from the ground up for rural usability with regional dialects (Hindi and Punjabi) and visual geospatial mappings.
-- **Production-Ready Foundation:** Clean Next.js 14 architecture with Supabase authentication, robust data models, and isolated calculation engines.
+### 1) Crop and residue advisory
+The platform recommends crops and residue-handling strategies using agricultural logic, field data, and contextual models. This helps farmers choose options that improve sustainability and reduce harmful burning practices.
+
+### 2) Mandi and market insights
+The farmer dashboard provides pricing trends, MSP comparison, and market overview with data-driven reporting. It is designed to make agricultural decision-making more accessible and transparent.
+
+### 3) Voice and conversational AI
+The app includes a voice advisory flow where a farmer question is captured in the browser, processed by a server-side Gemini assistant, and optionally converted to speech. This makes the experience more natural and accessible for rural users.
+
+### 4) Logistics matching engine
+The matching service uses LightGBM-based scoring and a capacity-aware assignment process to match farmers with buyers while respecting tonnage and compatibility constraints.
+
+### 5) Multilingual accessibility
+AgroVani is designed with English, Hindi, and Punjabi support so the experience can better serve diverse farmer communities.
 
 ---
 
-## 👥 Contributors:
-Debayan Paul, Annesha Chakraborty, Ayan Chatterjee and Nikita Bose
+## ⚡ Quick start
 
-Built with passion for sustainable agriculture and rural empowerment.
+### Prerequisites
+- Node.js >= 18.18
+- npm
+- Python >= 3.10
+- Optional: Docker for local container workflows
 
-## Farmer Advisory MVP
-
-Open `/farmer/advisory` for the mobile-friendly yield and mandi dashboard.
-The API routes are:
-
-- `POST /api/yield-prediction`: observational baseline, range, confidence, uncertainty risk, and estimated treatment advantage.
-- `GET /api/mandi`: commodity, state, and market filters with latest modal price, seven-day rows, source, and freshness.
-- `GET /api/msp`: premium/discount versus the configured MSP record and a soft signal.
-- `POST /api/report/pdf`: one-page printable PDF summary.
-- `POST /api/report/whatsapp`: short forwardable farmer-group message.
-
-The seeded mandi rows in `backend/data/mandiDemo.js` are demo records shaped like Agmarknet data and are explicitly marked non-official. They must be replaced by verified Agmarknet/Agmarknet 2.0 records before production use. Missing or stale values are returned as `insufficient data`; the UI never guesses.
-
-### Codespaces setup
+### Frontend setup
 
 ```bash
 npm install
@@ -185,69 +190,133 @@ cp .env.example .env.local
 npm run dev
 ```
 
-## Agricultural logistics matching engine
+This starts the primary web experience for the AgroVani app.
 
-The Python matching service uses LightGBM to score farmer/buyer compatibility
-and directional preferences, then runs farmer-proposing, capacity-aware
-deferred acceptance to produce stable assignments. Farmer lots are indivisible;
-each accepted lot must fit within the buyer's remaining tonnage capacity.
+### Python ML / matching setup
 
-### Setup and run
-
-From the repository root, install the Python dependencies into the active
-Codespace environment:
+Install Python dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-Generate 100 farmers, 25 buyers, and 2,000 historical pairs, then train and
-persist the LightGBM models and feature metadata:
+Generate synthetic training data and train the model:
 
 ```bash
 python data/generate_synthetic_data.py
 python ml/train_model.py
 ```
 
-Start the API after the model artifacts are created:
+Start the matching API:
 
 ```bash
 uvicorn api.main:app --host 0.0.0.0 --port 8000
 ```
 
-The API exposes `GET /health`, `POST /score`, and `POST /match`. Both POST
-endpoints accept JSON with `farmers` and `buyers` arrays using the fields
-described in the generator. `/match` returns `matched_pairs`,
-`unmatched_farmers`, and aggregate logistics metrics. Interactive API docs are
-available at `/docs`. Requests that exceed 10,000 farmer/buyer combinations
-are rejected, and an unresolved weighted-capacity blocking cycle returns
-`409 Conflict` instead of an unverified assignment.
+Available endpoints include:
+- `GET /health`
+- `POST /score`
+- `POST /match`
+- Interactive docs at `/docs`
 
-Run the end-to-end Python tests with:
+---
+
+## 📝 Important API and product notes
+
+### Farmer advisory MVP
+Open `/farmer/advisory` to access the yield and mandi dashboard.
+
+Core API routes include:
+- `POST /api/yield-prediction`
+- `GET /api/mandi`
+- `GET /api/msp`
+- `POST /api/report/pdf`
+- `POST /api/report/whatsapp`
+
+These routes provide yield forecasts, price signals, and farmer-friendly summaries designed for practical use.
+
+### Matching engine behavior
+The Python matching engine:
+- scores farmer-buyer compatibility using machine learning
+- enforces capacity-aware assignments
+- avoids invalid unstable allocations
+- rejects oversized batch requests safely
+- returns `409 Conflict` for unresolved assignment cycles
+
+### Demo data caution
+Mandi demo data is explicitly intended for demo use and should be replaced with verified production data before launch.
+
+---
+
+## 🔐 Environment variables
+
+Use `.env.example` as the reference baseline. Typical variables may include:
+
+- `GEMINI_API_KEY` for Gemini-powered advisory flows
+- `GEMINI_TTS_MODEL` and `GEMINI_TTS_VOICE` for speech generation tuning
+- `MATCH_API_KEY` for protected model endpoints
+- Supabase or service credentials required by the app environment
+
+---
+
+## ✅ Testing
+
+Run Python tests:
 
 ```bash
 pytest
 ```
 
-By default, synthetic CSVs are written to `data/` and trained artifacts to
-`ml/saved_models/`. Pass `--output-dir` to either script to use a different
-location.
-
-### Local hosting and deployment
-
-Codespaces installs the root Python requirements, generates the local demo data
-and models, and forwards port `8000`. For Docker, start only the matching
-service with:
+Run frontend workspace checks if needed:
 
 ```bash
-docker compose up --build matching-api
+npm run lint
+npm run build
 ```
 
-For an ordinary local checkout, generate/train the artifacts once, then start
-Uvicorn with the command above. If you set `MATCH_API_KEY` in `.env`, include
-the corresponding `X-API-Key` header when calling the protected POST routes.
+---
 
-Render is configured as a separate Python web service in `render.yaml`; its
+## 🚀 Deployment
+
+This repository is set up for:
+- Vercel deployment for the web frontend
+- Render deployment for Python services
+- Docker-based local or cloud orchestration
+
+See:
+- `vercel.json`
+- `render.yaml`
+- `docker-compose.yml`
+
+---
+
+## 🌍 Project impact
+
+AgroVani supports several practical sustainability and development goals:
+
+- Reduced stubble burning and related environmental damage
+- Lower barriers to access for small and marginal farmers
+- Better market visibility and crop planning via AI guidance
+- More efficient farm equipment circulation and logistics
+- Stronger rural digital inclusion through multilingual access
+
+---
+
+## 👥 Contributors
+
+- Debayan Paul
+- Annesha Chakraborty
+- Ayan Chatterjee
+- Nikita Bose
+
+Built with the goal of creating a more resilient, intelligent, and sustainable agriculture ecosystem.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
 build trains the demo models before starting Uvicorn, and `/health` is its
 health check. The service generates a `MATCH_API_KEY` in Render. Send it as
 `X-API-Key` on `/score` and `/match`; keep this value in server-side
